@@ -1,6 +1,18 @@
 import React from "react";
-import  Container  from "./style";
+import { Input, InputWrriper,Container, SearchIcon, NavbarSection } from "./style";
+import Time from "./Time";
+
+
 const Navbar =()=>{
-    return <Container>Navbar</Container>
+    return <Container>
+        <InputWrriper>
+        <SearchIcon/>
+        <Input placeholder="Search"/> 
+        </InputWrriper>
+        <NavbarSection>
+            <Time/>
+        
+        </NavbarSection>
+    </Container>
 }
 export default Navbar

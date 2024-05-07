@@ -7,8 +7,9 @@ import Groups from "../assets/icons/group.svg?react";
 import Course from "../assets/icons/course.svg?react";
 import HR from "../assets/icons/hr.svg?react";
 import Settings from "../assets/icons/setting.svg?react";
+import Generics from "../view/Generics";
 // Components
-import { Generics } from "../view/Generics";
+
 // import { AnalitikaView } from "../views/Analitika";
 // import LidsAllView from "../views/LidsAll";
 // import FirstClassView from "../views/FirstClass";
@@ -16,14 +17,14 @@ import { Generics } from "../view/Generics";
 // import GroupsView from "../views/GroupsView";
 // import GroupsRoomView from "../views/GroupsRoom";
 
-const sidebar = [
+const data = [
   {
     id: 1,
     title: "Analitika",
     path: "/analitika",
     icon: Analitika,
     isPrivate: true,
-    element: Generics,
+    element: Generics ,
     role: ["admin", "manager"],
   },
   {
@@ -253,6 +254,22 @@ const sidebar = [
       },
     ],
   },
+  {
+    id: 9,
+    title: "Login",
+    path: "/login",
+    isPrivate: true,
+   hidden:true,
+    element: Generics,
+  },
+  {
+    id: 10,
+    title: "Reset",
+    path: "/reset",
+    isPrivate: true,
+   hidden:true,
+    element: Generics,
+  }
 ];
 
-export default sidebar;
+export default data;

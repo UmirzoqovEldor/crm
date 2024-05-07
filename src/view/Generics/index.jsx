@@ -2,7 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 import  Container  from './styel'
 
-export default function Generics() {
+export function Generics() {
     const location =useLocation()
   return (
     <Container>
@@ -11,4 +11,5 @@ export default function Generics() {
     </Container>
   )
 }
+export default Generics
 
